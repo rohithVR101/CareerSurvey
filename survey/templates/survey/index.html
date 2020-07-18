@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey - QuantumHunts</title>
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://surveyjs.azureedge.net/1.7.20/survey.jquery.js"></script>
+    <link
+      href="https://surveyjs.azureedge.net/1.7.20/modern.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+  </head>
+  <body>
+    <div id="surveyNavigationTop"></div>
+    <div id="surveyElement" style="display: inline-block; width: 100%;"></div>
+    <div id="surveyResult"></div>
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+  </body>
+</html>
