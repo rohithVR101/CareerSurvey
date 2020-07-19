@@ -14,11 +14,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-<<<<<<< HEAD
 ALLOWED_HOSTS = ['quantumhunts-survey.herokuapp.com']
-=======
-ALLOWED_HOSTS = ['.herokuapp.com']
->>>>>>> bfa2d0aab3678251e56d1927e10c84444469c0ac
 
 
 # Application definition
