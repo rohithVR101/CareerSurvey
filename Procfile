@@ -1,1 +1,1 @@
-web: gunicorn surveyquantumhunts.wsgi
+web: gunicorn surveyquantumhunts
