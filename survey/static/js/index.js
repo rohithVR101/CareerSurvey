@@ -331,9 +331,6 @@ var json = {
 window.survey = new Survey.Model(json);
 
 survey.onComplete.add(function (result) {
-  document.querySelector("#surveyResult").textContent =
-    // "Result JSON:\n" + JSON.stringify(result.data, null, 3);
-
      $.ajax({
        url: "/ajax/submit",
        type: "post",
@@ -344,8 +341,6 @@ survey.onComplete.add(function (result) {
        },
        data: JSON.stringify(result.data, null, 3),
      });
-
-
 });
 
 $("#surveyElement").Survey({ model: survey });
