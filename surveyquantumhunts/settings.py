@@ -9,7 +9,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '$9xhmuxfdgr_f+@2!2evl^avgxsro7c)vi!5+r-et*)a1zuj$4'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -69,10 +69,10 @@ WSGI_APPLICATION = 'surveyquantumhunts.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heroku_4e85db4b15bdff9',
-        'USER': 'b17ac9a2e62270',
-        'PASSWORD': '1c00d63d',
-        'HOST': 'eu-cdbr-west-03.cleardb.net',
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
         'PORT': '3306',
         'CONN_MAX_AGE': 500
     }
@@ -124,7 +124,7 @@ STATICFILES_DIRS = (
 )
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-SENDGRID_API_KEY = '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'
+SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
 
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey'
