@@ -10,7 +10,7 @@ Survey.Serializer.addProperty("page", {
 });
 
 var json = {
-  title: "Survey form for QuantumHunts",
+  title: "Survey form for Career Help!",
   pages: [
     {
       name: "page1",
