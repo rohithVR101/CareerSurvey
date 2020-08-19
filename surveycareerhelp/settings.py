@@ -14,7 +14,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['quantumhunts-survey.herokuapp.com']
+ALLOWED_HOSTS = ['careerhelp-survey.herokuapp.com']
 
 
 # Application definition
@@ -42,7 +42,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-ROOT_URLCONF = 'surveyquantumhunts.urls'
+ROOT_URLCONF = 'surveycareerhelp.urls'
 
 TEMPLATES = [
     {
@@ -60,7 +60,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'surveyquantumhunts.wsgi.application'
+WSGI_APPLICATION = 'surveycareerhelp.wsgi.application'
 
 
 # Database

@@ -2,7 +2,7 @@ Babel==2.8.0
 backcall==0.1.0
 bcrypt==3.1.7
 beautifulsoup4==4.8.2
-bleach==3.1.0
+bleach==3.1.4
 certifi==2019.11.28
 cffi==1.14.0
 chardet==3.0.4
@@ -23,7 +23,7 @@ defusedxml==0.6.0
 diff-match-patch==20181111
 distributed==2.11.0
 dj-database-url==0.5.0
-Django==3.0.3
+Django==3.0.7
 django-heroku==0.3.1
 docutils==0.16
 entrypoints==0.3
@@ -84,7 +84,6 @@ patsy==0.5.1
 pep8==1.7.1
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==7.0.0
 pkginfo==1.5.0.1
 pluggy==0.13.1
 ply==3.11
